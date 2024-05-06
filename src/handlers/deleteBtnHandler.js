@@ -6,7 +6,7 @@ const deleteBtnHandler = (id) => {
         item.remove();
     }
 
-    data.items = data.items.filter(item => item.id !== id);
+    data.items = data.items.filter((item) => item.id !== id);
 };
 
 export default deleteBtnHandler;

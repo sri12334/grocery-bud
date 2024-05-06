@@ -18,7 +18,8 @@ const createItem = (item) => {
     editBtn.classList.add('edit-btn');
 
     editBtn.addEventListener('click', () => {
-        editBtnHandler(item);
+        container.classList.add('selected');
+        editBtnHandler(item.id);
     });
 
     const deleteBtn = document.createElement('button');

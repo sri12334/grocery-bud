@@ -3,7 +3,8 @@ import addItemHandler from '../handlers/addItemHandler.js';
 
 const addItemEvent = () => {
     dom.submitBtn.addEventListener('click', (e) => {
-        addItemHandler(e);
+        e.preventDefault();
+        addItemHandler(dom.todoInput.value);
     });
 };
 

@@ -1,9 +1,11 @@
+import data from '../data.js';
 import dom from '../dom.js';
 
-const editBtnHandler = (item) => {
-    dom.submitBtn.innerText = 'Edit';
+const editBtnHandler = (id) => {
+    const itemId = Number(id);
+    dom.submitBtn.innerText = 'edit';
+    const item = data.items.find((item) => item.id === itemId);
     dom.todoInput.value = item.text;
-    dom.todoInput.dataset.itemId = item.id; // Add a dataset attribute to store the item id
 };
 
 export default editBtnHandler;
