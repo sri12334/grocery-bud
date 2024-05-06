@@ -27,7 +27,6 @@ const createItem = (item) => {
     deleteBtn.classList.add('delete-btn');
 
     deleteBtn.addEventListener('click', () => {
-        // eslint-disable-next-line no-restricted-globals
         const done = confirm('Are you sure? want to delete item');
         if (done) {
             deleteBtnHandler(item.id);
