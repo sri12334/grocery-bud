@@ -32,7 +32,7 @@ const handelEdit = (value) => {
     dom.todoInput.value = '';
     dom.submitBtn.innerText = 'submit';
     selectedItem.classList.remove('.selected');
-    alert('Item has been edited successfully ')
+    alert('Item has been edited successfully ');
 };
 
 const addItemHandler = (inputValue) => {
